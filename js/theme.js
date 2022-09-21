@@ -253,8 +253,10 @@ if (downloadNote.length >= 1) {
     var githubLink = "https://github.com/pytorch/tutorials/blob/master/" + tutorialUrlArray.join("/") + ".py",
         notebookLink = $(".reference.download")[1].href,
         notebookDownloadPath = notebookLink.split('_downloads')[1],
+        sagemakerLink = "https://studiolab.sagemaker.aws/import/github/pytorch/tutorials/blob/gh-pages/_downloads" + notebookDownloadPath,
         colabLink = "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads" + notebookDownloadPath;
 
+    $("#amazon-sagemaker-link").wrap("<a href=" + sagemakerLink + " data-behavior='call-to-action-event' data-response='Run in Amazon SageMaker Studio Lab' target='_blank'/>");
     $("#google-colab-link").wrap("<a href=" + colabLink + " data-behavior='call-to-action-event' data-response='Run in Google Colab' target='_blank'/>");
     $("#download-notebook-link").wrap("<a href=" + notebookLink + " data-behavior='call-to-action-event' data-response='Download Notebook'/>");
     $("#github-view-link").wrap("<a href=" + githubLink + " data-behavior='call-to-action-event' data-response='View on Github' target='_blank'/>");

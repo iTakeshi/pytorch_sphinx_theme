@@ -11281,7 +11281,6 @@ a:hover {
   height: 1rem;
 }
 .pytorch-call-to-action-links a {
-  padding-right: 1.25rem;
   color: #000000;
   cursor: pointer;
 }
@@ -11304,11 +11303,11 @@ a:hover {
     display: none;
   }
 }
-.pytorch-call-to-action-links a #google-colab-link, .pytorch-call-to-action-links a #download-notebook-link,
-.pytorch-call-to-action-links a #github-view-link {
+.pytorch-call-to-action-links a #amazon-sagemaker-link, .pytorch-call-to-action-links a #google-colab-link,
+.pytorch-call-to-action-links a #download-notebook-link, .pytorch-call-to-action-links a #github-view-link {
   padding-bottom: 0.625rem;
   border-bottom: 1px solid #f3f4f7;
-  padding-right: 2.5rem;
+  padding-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11316,8 +11315,8 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.pytorch-call-to-action-links a #google-colab-link:hover, .pytorch-call-to-action-links a #download-notebook-link:hover,
-.pytorch-call-to-action-links a #github-view-link:hover {
+.pytorch-call-to-action-links a #amazon-sagemaker-link:hover, .pytorch-call-to-action-links a #google-colab-link:hover,
+.pytorch-call-to-action-links a #download-notebook-link:hover, .pytorch-call-to-action-links a #github-view-link:hover {
   border-bottom-color: #e44c2c;
   color: #e44c2c;
 }
